@@ -73,4 +73,4 @@ All key elements include the specified `data-testid` attributes for automated te
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/profile-card.git
+   git clone https://github.com/cwarim-A/profile-card.git
