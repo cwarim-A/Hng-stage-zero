@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <section class="contact-form" data-testid="test-profile-card">
+        <nav class="navigation">
+            <a href="index.html" data-testid="test-nav-home">Profile</a>
+            <a href="about.html" data-testid="test-nav-about">About</a>
+            <a href="contact.html" data-testid="test-nav-contact">Contact</a>
+        </nav>
+
+        <form action="">
+            <div class="form-group">
+                <label for="name">Full name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+
+    </section>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <section class="contact-form" data-testid="test-profile-card">
+        <!-- Navigation -->
+        <nav class="navigation">
+            <a href="index.html" data-testid="test-nav-profile">Profile</a>
+            <a href="about.html" data-testid="test-nav-about">About</a>
+            <a href="contact.html" class="active" data-testid="test-nav-contact">Contact</a>
+        </nav>
+
+        <h2 class="contact-heading" data-testid="test-contact-heading">Contact Us</h2>
+        <!-- Contact Form -->
+        <form id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="name">Full name:</label>
+                <input type="text" id="name" name="name" data-testid="test-contact-name" aria-describedby="error-name"
+                    required>
+                <span class="error" id="error-name" data-testid="test-contact-error-name"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" data-testid="test-contact-email"
+                    aria-describedby="error-email" required>
+                <span class="error" id="error-email" data-testid="test-contact-error-email"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" data-testid="test-contact-subject"
+                    aria-describedby="error-subject" required>
+                <span class="error" id="error-subject" data-testid="test-contact-error-subject"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" data-testid="test-contact-message"
+                    aria-describedby="error-message" required></textarea>
+                <span class="error" id="error-message" data-testid="test-contact-error-message"></span>
+            </div>
+
+            <button type="submit" data-testid="test-contact-submit">Send</button>
+
+            <p id="success-message" class="success" data-testid="test-contact-success" aria-live="polite"
+                style="display:none;">
+                ✅ Message sent successfully!
+            </p>
+        </form>
+    </section>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>

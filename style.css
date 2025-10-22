@@ -11,6 +11,7 @@ a:focus {
     outline-offset: 4px;
 }
 
+
 body {
     font-family: "Inter", sans-serif;
     margin: auto;
@@ -20,6 +21,7 @@ body {
     background-image: url("bg-image-two.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .profile-card {
@@ -29,9 +31,41 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 
+
     background-color: rgba(255, 255, 255, 0.932);
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
+}
+
+.navigation {
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+    width: 100%;
+    max-width: 340px;
+    z-index: 10;
+    border-radius: 23px;
+}
+
+.navigation>a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation>a:hover {
+    color: blue;
+}
+
+.navigation a.active {
+    color: blue;
+
 }
 
 .profile-background {
@@ -168,7 +202,7 @@ body {
     color: white;
 }
 
-.extra-info{
+.extra-info {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -177,18 +211,19 @@ body {
     margin: 20px 0px 20px 0px;
 }
 
-.hobbies > h3{
+.hobbies>h3 {
     font-size: 14px;
 }
 
 ul {
     margin-top: 10px;
 }
-ul > li{
+
+ul>li {
     font-size: 12px;
 }
 
-.dislikes > h3{
+.dislikes>h3 {
     font-size: 14px;
 }
 
@@ -237,4 +272,3 @@ ul > li{
         top: 110px;
     }
 }
-
